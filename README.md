@@ -1,1 +1,2 @@
-# pokedex.github.io
+# Blue-PokeDex
+Projeto de curso - Pokedex
