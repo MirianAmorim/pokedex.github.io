@@ -1,5 +1,5 @@
 {
-  "name": "pokedex-NodeJS",
+  "name": "pokedex.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chanelym/pokedex-NodeJS.git"
+    "url": "git+https://github.com/MirianAmorim/pokedex.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chanelym/pokedex-NodeJS/issues"
+    "url": "https://github.com/MirianAmorim/pokedex.github.io/issues"
   },
-  "homepage": "https://github.com/chanelym/pokedex-NodeJS#readme",
+  "homepage": "https://github.com/MirianAmorim/pokedex.github.io#readme",
   "devDependencies": {
     "nodemon": "^2.0.13"
   },
