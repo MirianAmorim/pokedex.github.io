@@ -1,22 +1,24 @@
 {
-  "name": "blue-pokedex",
+  "name": "pokedex-NodeJS",
   "version": "1.0.0",
-  "description": "Projeto de curso - Pokedex",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FredyyLima/Blue-PokeDex.git"
+    "url": "git+https://github.com/chanelym/pokedex-NodeJS.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FredyyLima/Blue-PokeDex/issues"
+    "url": "https://github.com/chanelym/pokedex-NodeJS/issues"
   },
-  "homepage": "https://github.com/FredyyLima/Blue-PokeDex#readme",
+  "homepage": "https://github.com/chanelym/pokedex-NodeJS#readme",
   "devDependencies": {
     "nodemon": "^2.0.13"
   },

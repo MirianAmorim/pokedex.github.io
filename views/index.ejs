@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style_index.css">
-    <title>Pokemon</title>
-</head>
-        <h1><img src="/img/logo_pokemon.png" alt="Logo Pokemon" width ="500px" height = "227px"></h1>
-<body>
-    <form action="/cadastro" method="get">
-    <div class= imagem_index>
-    <img id= pokedex src="/img/pokedex.png" alt="Pokedex" width ="754px" height = "616px">
-    </div>
-    
-        <div class= imagem_index>
-            <button type="submit"><img id= muda_pag src="/img/pikachu_Muda_pag.png" alt="Pikachu com um balão dizendo PIKA! PIKA! PIKA! TEM MAIS COISA POR AQUI! CLICA EM MIM PARA MUDARMOS DE PÁGINA! PIKA! CHU!" width ="880px" height = "715px"></button>
-    </div>
-    
-    <ul>
-        <%lista.forEach(item => { %>
-            <li>Nome: <%= item.nome %>. Tipo: <%= item.tipo %><br>
-                <img src= <%=item.img %> alt= <%= item.nome %> height="150px"> </li>
-        <% }) %>
-     </ul>
-     
-    
-    <footer>
-        <p>Todos os direitos reservados Fredy_Lima® 2021</p>
-    </footer>
-</form>    
-</body>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+        <title>Projeto Pokédex</title>
+    </head>
 
+    <body>
+        <nav>
+            <img src="/img/ghost.gif" class="img-fluid gif" alt="Charmander chasing hils tail">
+            <h1>My Pokédex</h1>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="cadastro">Cadastro</a>
+                </li>
+                <li>
+                    <a href="detalhes">Detalhes</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="main-class"> 
+        
+                <ul>
+                    <% pokedex.forEach(item => { %>
+                        <li><%= item.Nome %></li>
+                        <li><%= item.Imagem %></li>
+                        <li><%= item.Tipo %></li>
+                    <% }) %>
+                </ul>
+            
+    </section> 
+
+
+    </body>
 </html>
