@@ -45,14 +45,21 @@ const pokedex = [
     }
 ];
 
+
 app.get("/", function (req, res) {
     res.render("index.ejs", { pokedex: pokedex });
 });
+
 app.get("/cadastro", function (req, res) {
-    res.render("cadastro.ejs");
+    res.render("cadastro.ejs", {text});
+    text = 'Seu Pokémon foi cadastrado com sucesso!'
+    setTimeout( () =>{
+        text = '';
+    }, 1000);
 });
+
 app.get("/detalhes", function (req, res) {
-    res.render("detalhes.ejs");
+    res.render("detalhes");
 });
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
