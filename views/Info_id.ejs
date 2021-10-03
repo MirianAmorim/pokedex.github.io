@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
-    <title>Pokedex</title>
+    <title>Detalhes.Pokedex</title>
 </head>
 <header>
     <nav>
@@ -17,26 +17,27 @@
             <li>
                 <a href="cadastro">Cadastro</a>
             </li>
-            <li>
-                <a href="detalhes">Detalhes</a>
-            </li>
         </ul>
     </nav>
 </header>
 <body>
     <main class="body">
-        <% pokedex.forEach((pokedex, find) => { %>
             <section class="pac1">
                 <div class="pac2">
-                    <a href="/detalhes/<%= find %>"><img class="img" src="<%= pokedex.foto %>"></a>
+                    <img class="img" src="<%= pokedex.foto %>">
                     <p class="nome"> <%= pokedex.nome %></p>
                     <p class="tipo"> <%= pokedex.tipo %></p>
+                    <p class="numero"> Numero: <%= pokedex.numero %></p>
+                    <p class="desc"> Desc: <%= pokedex.desc %></p>
+                    <p class="alt">Altura: <%= pokedex.altura %></p>
+                    <p class="peso"> Peso: <%= pokedex.peso %></p>
+                    <p class="categ"> Categ: <%= pokedex.categ %></p>
+                    <p class="habil"> Habil: <%= pokedex.habil %></p>
                 </div>
             </section>
-        <% }) %>
     </main>
-
-    <script src="js/script.js"></script>
+    
+    <script src="/js/script.js"></script>
 
 </body>
 </html>
