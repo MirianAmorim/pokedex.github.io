@@ -48,5 +48,11 @@ const pokedex = [
 app.get("/", function (req, res) {
     res.render("index.ejs", { pokedex: pokedex });
 });
+app.get("/cadastro", function (req, res) {
+    res.render("cadastro.ejs");
+});
+app.get("/detalhes", function (req, res) {
+    res.render("detalhes.ejs");
+});
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
