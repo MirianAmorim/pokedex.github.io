@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Cadastro.Pokedex</title>
+</head>
+<header>
+    <nav>
+        <img src="/img/pokedex.png" class="pok" alt="Pokédex Logo">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/views/detalhes.ejs">Detalhes</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="cadastro">
+        <form action="/infos" method="POST">
+
+            <h2> Cadastre o seu Pokémon </h2>
+
+            <section class="form">
+                <label for="Foto: "></label>
+                <input type="text" name="poke_photo" id="photo" placeholder="Cole a URL da imagem" required>
+            </section>
+            <a href="https://www.pokemon.com/br/pokedex/" target="__blank" id="link">Baixe as imagens aqui!</a>
+
+            <section class="form">
+                <label for="Número:"></label>
+                <input type="text" name="poke_number" id="number" placeholder="Número do Pokémon" required>
+            </section>
+
+            <section class="form">
+                <label for="Nome: "></label>
+                <input type="text" name="poke_name" id="name" placeholder="Nome" required>
+            </section>
+                
+            <section class="form">
+                <label for="Tipo:"></label>
+                <input type="text" name="poke_type" id="type" placeholder="Tipo" required>
+            </section>
+
+            <section class="form">
+                <label for="Categoria:"></label>
+                <input type="text" name="poke_category" id="category" placeholder="Categoria" required>
+            </section>
+
+            <section class="form">
+                <label for="Altura:"></label>
+                <input type="text" name="poke_height" id="height" placeholder="Altura" required>
+            </section>
+
+            <section class="form">
+                <label for="Peso:"></label>
+                <input type="text" name="poke_category" id="weight" placeholder="Peso" required>
+            </section>
+
+            <section class="form">
+                <label for="Descrição:"></label>
+                <input type="text" name="poke_description" id="description" placeholder="Descrição" required>
+            </section>
+        
+            <button type="submit" class="button" id="button">Adicionar Pokémon</button>
+        </form>
+    </section>
+
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

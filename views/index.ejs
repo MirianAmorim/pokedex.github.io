@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Pokedex</title>
+</head>
+<header>
+    <nav>
+        <img src="/img/pokedex.png" class="pok" alt="Pokédex Logo">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/views/cadastro.ejs">Cadastro</a>
+            </li>
+            <li>
+                <a href="/views/detalhes.ejs">Detalhes</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main class="body">
+        <% pokedex.forEach((pokedex, find) => { %>
+            <section class="pac1">
+                <div class="pac2">
+                    <a href="/detalhes/<%= find %>"><img class="img" src="<%= pokedex.foto %>"></a>
+                    <p class="nome"> <%= pokedex.nome %></p>
+                    <p class="tipo"> <%= pokedex.tipo %></p>
+                </div>
+            </section>
+        <% }) %>
+    </main>
+
+    <script src="/js/script.js"></script>
+
+    <% if(text != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+
+</body>
+</html>
