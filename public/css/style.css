@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #eedc3b;
+    text-decoration:none;
+    color: rgb(16, 9, 109);
+}
+
+.header{
+    text-decoration:none;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 9rem 6rem 6rem 6rem;
+    text-align: left;
+}
+
+.pac1 {
+    background-image: url(/img/fundo.jpg);
+    background-repeat: no-repeat;
+    padding: .6em 1em .6em .6em;
+    margin-bottom: 6rem;
+    border-radius: .3em;
+    box-shadow: rgb(0, 0, 0) 5px 8px 12px;
+    border: solid 1px rgb(37, 32, 32);
+}
+
+.pac2 {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: .3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.body .pac1 .pac2 .img {
+    min-width: 120px;
+    height: 120px;
+    border-radius: .3em;
+    border: solid 1px #eedc3b;
+}
+
+.body .pac1 .pac2 .nome {
+    margin: 0;
+    font-size: 1em;
+    color: rgb(16, 9, 109);
+    margin-top: 0.5rem;
+    border-radius: .3em;
+}
+
+.body .pac1 .pac2 .tipo {
+    color: rgb(16, 9, 109);
+    margin-top: 0.5rem;
+    border-radius: .3em;
+}
+body p{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cadastro {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    text-decoration:none;
+    text-align: center;
+    padding: 20px;
+    color:rgb(16, 9, 109) ;
+}
+
+ul #hi{
+    width: 10%;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: 1px solid rgb(16, 9, 109);
+}
+
+button{
+    color: rgb(16, 9, 109);
+}
+
