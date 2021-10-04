@@ -9,37 +9,37 @@ app.use(express.urlencoded( { extended: true } ));
 
 const pokedex = [
     {
-    num: "00",
+    num: "004",
     nome: "Charmander",
     tipo: "Fogo",
     foto: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
     desc: "Tem preferência por coisas quentes. Quando chove, diz-se que vapor jorra da ponta da sua cauda.",
-    alt: "0.6",
-    peso: "8.5",
+    alt: "0.6m",
+    peso: "8.5Kg",
     cat: "Lagarto",
     hab: "Chama",
     },
     {
-    num: "012",
-    nome: "Butterfree",
-    tipo: "Bug",
-    foto: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
-    desc: "",
-    alt: "1.1m",
-    peso: "32Kg",
-    cat: "Borboleta",
-    hab: "Compound Eyes",
+    num: "007",
+    nome: "Squirtle",
+    tipo: "Água",
+    foto: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+    desc: "Quando ele retrai seu longo pescoço em sua concha, ele esguicha água com força vigorosa.",
+    alt: "0.5m",
+    peso: "9Kg",
+    cat: "Tartaruga",
+    hab: "Canhão d'água",
     },
     {
     num: "012",
     nome: "Butterfree",
-    tipo: "Bug",
+    tipo: "Inseto",
     foto: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
-    desc: "In battle, it flaps its wings at great speed to release highly toxic dust into the air.",
+    desc: "Em batalha, ele bate suas asas em grande velocidade para liberar poeira altamente tóxica no ar.",
     alt: "1.1m",
     peso: "32Kg",
     cat: "Borboleta",
-    hab: "Compound Eyes",
+    hab: "Olhos Compostos",
     }
 ];
 let text = '';
@@ -76,12 +76,10 @@ app.get("/detalhes", function (req, res) {
     res.render("detalhes", { pokedex : pokedex });
 });
 
-app.get('detalhes/:id', function (req, res) {
+app.get('/detalhes/:id', function (req, res) {
     const id = req.params.id;
-    const pokedex = pokedex[id];
-    res.render("info_id", {
-        pokedex,
-      });
+    const pokemon = pokedex[id];
+    res.render("info_id", {pokemon});
 });
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
