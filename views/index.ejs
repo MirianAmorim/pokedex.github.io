@@ -21,8 +21,16 @@
             </li>
         </ul>
     </nav>
+    
 </header>
+
 <body>
+    <% if(text != "") {  %>
+        <section id="text">
+            <p><%= text %></p> 
+            <span id="close">&times;</span>
+        </section>
+    <% }  %>
     <main class="body">
         <% pokedex.forEach((pokedex, find) => { %>
             <section class="pac1">
@@ -35,8 +43,7 @@
             </section>
         <% }) %>
     </main>
-
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 </html>

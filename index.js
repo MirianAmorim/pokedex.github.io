@@ -42,17 +42,18 @@ const pokedex = [
     hab: "Olhos Compostos",
     }
 ];
+
 let text = '';
 
 app.get("/", function (req, res) {
-    res.render("index", { pokedex: pokedex });
-});
-
-app.get("/cadastro", function (req, res) {
     setTimeout( () =>{
         text = "";
     }, 1000);
-    text = 'Seu Pokémon foi cadastrado com sucesso!'
+    res.render("index", { pokedex: pokedex, text });
+});
+
+app.get("/cadastro", function (req, res) {
+    
     res.render("cadastro", {text : text});
 });
 
@@ -68,8 +69,8 @@ app.post("/infos", function (req, res) {
         peso: peso, 
         cat: cat, 
         hab: hab});
-        text = 'Parabéns, seu Pokémon foi cadastrado!'
-    res.redirect("cadastro");
+        text = 'Seu Pokémon foi cadastrado com sucesso!';
+    res.redirect("/");
 });
 
 app.get("/detalhes", function (req, res) {
