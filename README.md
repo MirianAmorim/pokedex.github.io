@@ -1,1 +1,1 @@
-#pokedex.github.io
+#pokedex
